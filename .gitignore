@@ -1,0 +1,10 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+.venv/
+venv/
+ansible-venv/
+__pycache__/
+*.pyc
+.env

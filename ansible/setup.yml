@@ -1,0 +1,13 @@
+---
+- name: Configure DevOps Lab
+  hosts: servers
+  gather_facts: true
+
+  tasks:
+    - name: Confirm Ansible execution
+      ansible.builtin.debug:
+        msg: "Ansible executed successfully in AWS CloudShell"
+
+    - name: Display operating system
+      ansible.builtin.debug:
+        var: ansible_distribution
